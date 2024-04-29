@@ -37,7 +37,7 @@ public class MazeGenerator extends JPanel{
                 neighbors.add(3);
             }
             Random rand = new Random();
-            int next = -1;
+            int next;
             if (!neighbors.isEmpty()) {
                 next = neighbors.elementAt(rand.nextInt(neighbors.size()));
                 switch (next) {
@@ -73,7 +73,7 @@ public class MazeGenerator extends JPanel{
                 Thread.sleep(100); // Pause for 500 milliseconds
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+        }
         }
     }
     public void paintComponent(Graphics g) {
