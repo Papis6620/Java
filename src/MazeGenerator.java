@@ -70,7 +70,7 @@ public class MazeGenerator extends JPanel{
             }
             mazePanel.repaint();
             try {
-                Thread.sleep(100); // Pause for 500 milliseconds
+                Thread.sleep(100); // Pause for 100 milliseconds for better visualization
             } catch (InterruptedException e) {
                 e.printStackTrace();
         }
